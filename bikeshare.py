@@ -21,19 +21,19 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     print('Would you like to see data for Chicago (enter 1), New York City (enter 2) or Washington (enter 3)?')
-    num_city = input('Enter number above for which city you would like information on? ')
+    num_city = input('Enter number above for which city you would like information on? Invalid entries will be restarted.')
     while True:
         if num_city == '1':
             city = 'chicago'
-            print('You Chose Chicago')
+            print('The second city')
             break
         elif num_city == '2':
             city = 'new york city'
-            print('You chose New York City')
+            print('The city that never sleeps')
             break
         elif num_city == '3':
             city = 'washington'
-            print('You chose Washington')
+            print('Nations capital')
             break
         else:
             print('That is not a valid entry.  We will have to start over.')
